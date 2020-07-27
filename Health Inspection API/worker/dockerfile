@@ -1,0 +1,9 @@
+FROM ubuntu:latest
+RUN apt-get update -y
+Run apt-get install -y python-pip python-dev build-essential
+copy . /worker
+WORKDIR /worker
+run pip install -r requirements.txt
+ENTRYPOINT ["python"]
+CMD ["worker.py"]
+
