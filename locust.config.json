@@ -1,0 +1,12 @@
+{
+  "target": "https://master.develop.tapis.io/v3",
+  "locusts": [
+    "BasicTasks"
+  ],
+        "access_token":"",
+        "jwt_header": "X-Tapis-Token",
+        "Tenant_ID": "master",
+        "tenant_header": "X-Tapis-Tenant",
+        "User_ID":"streams",
+        "user_header": "X-Tapis-User"
+}
