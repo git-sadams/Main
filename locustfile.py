@@ -30,7 +30,7 @@ class BasicTaskSet(TaskSet):
 
     @task(1)
     def tests(self):
-        self.client.put('/tokens', data = {"refresh_token":""},headers = headers ,)
+        self.client.put('/tokens', json = {"refresh_token":""},headers = headers ,)
         #'projecis/tapis_demo_project/sites/tapis_demo_site/instruments/test', headers=headers)
 
 class BasicTasks(HttpLocust):
