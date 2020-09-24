@@ -1,0 +1,14 @@
+version: "3"
+services:
+  locust-master:
+    image: tacc/locust_load_tests
+    volumes:
+      - ./scripts:/scripts
+    ports:
+      - "8089:8089"
+
+  locust-worker:
+    image: tacc/locust_load_tests
+    command: "--master-host=locust-master"
+    volumes:
+      - ./scripts:/scripts
