@@ -1,4 +1,4 @@
 Flask == 1.1.1
-Redis == 3.4.1
+Redis == 4.4.4
 HotQueue == 0.2.8
 Uuid
