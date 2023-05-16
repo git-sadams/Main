@@ -1,4 +1,4 @@
-Flask == 1.1.1
+Flask == 2.3.2
 Redis == 3.4.1
 HotQueue == 0.2.8
 Uuid
